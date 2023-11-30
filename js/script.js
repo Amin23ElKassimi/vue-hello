@@ -17,8 +17,13 @@ createApp({
     data() {
         
         return {
-            aminMessage: 'A Salam Aleikum'
+            aminMessage: ''
         }
-        
+
     },
-}).mount('#title');
+}).mount('#app');
+
+
+
+
+

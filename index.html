@@ -20,9 +20,13 @@
 
     </head>
     <body class="bg-dark text-light">
-        <div class="container-md ">
-            <h1 for="title">{{aminMessage}}</h1>
-            <input v-model="intitle"  type="text" id="title" name="title">
+        <div id="app"  class="container-md ">
+            <h1 for="title" >{{aminMessage}}</h1>
+            <input v-model="aminMessage"  type="text" id="title" name="title" placeholder="inserisci il tuo titolo">
+            <!-- <div>
+                <label for="lastName">Type here your last  name:</label>
+                <input type="text" v-model="lastName" id="lastName" name="lastName">
+            </div> -->
         </div>
     </body>
 </html>
