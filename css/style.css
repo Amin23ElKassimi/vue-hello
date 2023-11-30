@@ -36,3 +36,8 @@
     height: calc(100% / 5);
 }
 
+
+input{
+    margin-top: 1rem;
+    display: block;
+}

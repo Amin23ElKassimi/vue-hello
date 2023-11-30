@@ -21,12 +21,30 @@
     </head>
     <body class="bg-dark text-light">
         <div id="app"  class="container-md ">
-            <h1 for="title" >{{aminMessage}}</h1>
+            <!-- Titolo -->
+            <h1 v-bind:class="classColorString" for="title" >{{aminMessage}}</h1>
+            <!-- Input per inserire il Titolo -->
             <input v-model="aminMessage"  type="text" id="title" name="title" placeholder="inserisci il tuo titolo">
-            <!-- <div>
-                <label for="lastName">Type here your last  name:</label>
-                <input type="text" v-model="lastName" id="lastName" name="lastName">
-            </div> -->
+            <!-- Input per colorare il titolol -->
+            <input v-model="classColorString"  type="text" id="colorTitle" name="colorTitle" placeholder="Colora il tuo titolo">
+            <!-- Helping from Bootstrap -->
+            <h2 class="mt-5">Usando le classi di Bootstrap Formatta il Tuo titolo </h2>
+            <div class="d-flex mt-2 justify-content-between">
+                <div>
+                    <img src="img/bootstrap01.png" alt="">
+                </div>
+                <div>
+                    <img src="img/bootstrap02.png" alt="">
+                </div>
+            </div>
+            <!-- Bonus Imagine -->
+            <h2 class="mt-5">Inserisci il link di un immagine</h2>
+            <div class="">
+            <input class="align-content-stretch" v-model="imgLink"  type="text" id="imgLink" name="imgLink" placeholder="https://img">
+            <div class="mt-4">
+                <img :src="imgLink" alt="">
+            </div>
+            </div>
         </div>
     </body>
 </html>

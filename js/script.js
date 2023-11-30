@@ -17,8 +17,10 @@ createApp({
     data() {
         
         return {
-            aminMessage: ''
-        }
+            aminMessage: '',
+            classColorString: '',
+            imgLink: '',
+         }
 
     },
 }).mount('#app');
